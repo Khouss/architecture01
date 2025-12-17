@@ -4,18 +4,31 @@ import org.example.coursservice.entite.Course;
 import org.example.coursservice.entite.Teacher;
 import org.example.coursservice.repository.CourseRepository;
 import org.example.coursservice.repository.TeacherRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import java.util.List;
+
+import static org.hibernate.validator.internal.util.Contracts.assertNotNull;
 
 @SpringBootApplication
 public class CoursServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(CoursServiceApplication.class, args);
+    }
+
+    @Autowired
+    private ApplicationContext context;
+
+    @Test
+    void contextLoads() {
+        // Verify that the application context is not null
+        assertNotNull(context, "The application context should have loaded successfully");
     }
 
     @Bean
