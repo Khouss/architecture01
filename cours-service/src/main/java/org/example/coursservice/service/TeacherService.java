@@ -15,6 +15,7 @@ import java.util.UUID;
 
 @Service
 public class TeacherService {
+
     @ResponseStatus(HttpStatus.CONFLICT) // HTTP 409
     public class TeacherAlreadyExistsException extends RuntimeException {
 
@@ -61,11 +62,13 @@ public class TeacherService {
     public AuthResponse login(LoginRequest request) {
         // Trouver l'enseignant par email
         Optional<Teacher> teacherOpt = teacherRepository.findByEmail(request.getEmail());
-        if (teacherOpt.isEmpty()) {
+        Teacher teacher = null;
+        if (!passwordEncoder.matches(request.getPassword(), teacher.getPassword())) {
             throw new AuthenticationFailedException("Email ou mot de passe incorrect");
         }
 
-        Teacher teacher = teacherOpt.get();
+
+        teacher = teacherOpt.get();
 
         // Vérifier le mot de passe
         if (!passwordEncoder.matches(request.getPassword(), teacher.getPassword())) {

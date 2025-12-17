@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b880b42-73b3-4313-b16e-f1e259c47428" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/statistique-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/statistique-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/statistique-service/src/main/java/org/example/statistiqueservice/StatistiqueServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/statistique-service/src/main/java/org/example/statistiqueservice/StatistiqueServiceApplication.java" afterDir="false" />
-    </list>
+    <list default="true" id="8b880b42-73b3-4313-b16e-f1e259c47428" name="Changes" comment="test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +28,7 @@
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/PC/Desktop/Learn_hub_backend-master/statistique-service/src/test/java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -103,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766010225918</updated>
-      <workItem from="1766010226481" duration="2622000" />
+      <workItem from="1766010226481" duration="2945000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
