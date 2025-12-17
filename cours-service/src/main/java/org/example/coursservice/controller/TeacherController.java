@@ -1,8 +1,8 @@
 package org.example.coursservice.controller;
 
-import org.example.coursservice.DTO.AuthResponse;
-import org.example.coursservice.DTO.LoginRequest;
-import org.example.coursservice.DTO.RegisterRequest;
+import org.example.coursservice.dto.AuthResponse;
+import org.example.coursservice.dto.LoginRequest;
+import org.example.coursservice.dto.RegisterRequest;
 import org.example.coursservice.service.TeacherService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

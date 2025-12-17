@@ -1,8 +1,8 @@
 package org.example.coursservice.service;
 
-import org.example.coursservice.DTO.AuthResponse;
-import org.example.coursservice.DTO.LoginRequest;
-import org.example.coursservice.DTO.RegisterRequest;
+import org.example.coursservice.dto.AuthResponse;
+import org.example.coursservice.dto.LoginRequest;
+import org.example.coursservice.dto.RegisterRequest;
 import org.example.coursservice.entite.Teacher;
 import org.example.coursservice.repository.TeacherRepository;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
