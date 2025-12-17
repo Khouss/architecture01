@@ -27,7 +27,7 @@ public class CoursServiceApplication {
     private ApplicationContext context;
 
     @Test
-    void contextLoads() {
+    public void contextLoads() {
         // Verify that the application context is not null
         assertNotNull(context, "The application context should have loaded successfully");
     }
