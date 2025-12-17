@@ -26,7 +26,10 @@ public class StatistiqueServiceApplication {
     public void notImplemented() {
         throw new UnsupportedOperationException("notImplemented() cannot be performed because ...");
     }
-
+    @Override
+    public void emptyOnPurpose() {
+        // comment explaining why the method is empty
+    }
 
 
 
