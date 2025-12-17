@@ -1,8 +1,7 @@
-package org.example.inscriptionservice.Controller;
+package org.example.inscriptionservice.controller;
 
-import lombok.RequiredArgsConstructor;
-import org.example.inscriptionservice.Feign.CourseClient;
-import org.example.inscriptionservice.Repositorie.InscriptionRepository;
+import org.example.inscriptionservice.feign.CourseClient;
+import org.example.inscriptionservice.repositorie.InscriptionRepository;
 import org.example.inscriptionservice.entite.Inscription;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

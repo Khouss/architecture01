@@ -1,8 +1,7 @@
 package org.example.statistiqueservice.client;
 
 import lombok.RequiredArgsConstructor;
-import org.example.statistiqueservice.DTO.CourseDTO;
-import org.springframework.http.HttpStatusCode;
+import org.example.statistiqueservice.dto.CourseDTO;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;

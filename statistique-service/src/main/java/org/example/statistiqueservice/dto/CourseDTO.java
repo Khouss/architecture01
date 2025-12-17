@@ -1,4 +1,4 @@
-package org.example.statistiqueservice.DTO;
+package org.example.statistiqueservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

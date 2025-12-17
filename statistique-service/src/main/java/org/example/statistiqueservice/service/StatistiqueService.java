@@ -1,9 +1,9 @@
-package org.example.statistiqueservice.Service;
+package org.example.statistiqueservice.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.RequiredArgsConstructor;
-import org.example.statistiqueservice.DTO.*;
+import org.example.statistiqueservice.dto.*;
 import org.example.statistiqueservice.client.CourseClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,6 @@ import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import java.util.Arrays;
 import java.util.List;
 
 @Service

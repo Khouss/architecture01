@@ -1,8 +1,8 @@
 package org.example.inscriptionservice;
 
-import org.example.inscriptionservice.DTO.Course;
-import org.example.inscriptionservice.Feign.CourseClient;
-import org.example.inscriptionservice.Repositorie.InscriptionRepository;
+import org.example.inscriptionservice.dto.Course;
+import org.example.inscriptionservice.feign.CourseClient;
+import org.example.inscriptionservice.repositorie.InscriptionRepository;
 import org.example.inscriptionservice.entite.Inscription;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
-import java.util.Collection;
 import java.util.Date;
 import java.util.List;
 

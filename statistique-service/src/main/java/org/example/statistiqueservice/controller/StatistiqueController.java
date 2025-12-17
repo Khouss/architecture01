@@ -1,10 +1,8 @@
-package org.example.statistiqueservice.Controller;
+package org.example.statistiqueservice.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.example.statistiqueservice.DTO.CourseStatsDTO;
-import org.example.statistiqueservice.DTO.VideoStats;
-import org.example.statistiqueservice.DTO.YouTubeStatsDTO;
-import org.example.statistiqueservice.Service.StatistiqueService;
+import org.example.statistiqueservice.dto.YouTubeStatsDTO;
+import org.example.statistiqueservice.service.StatistiqueService;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 

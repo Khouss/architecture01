@@ -1,8 +1,7 @@
-package org.example.inscriptionservice.Feign;
+package org.example.inscriptionservice.feign;
 
-import org.example.inscriptionservice.DTO.Course;
+import org.example.inscriptionservice.dto.Course;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.data.web.PagedModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 

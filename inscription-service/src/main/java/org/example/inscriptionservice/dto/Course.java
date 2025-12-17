@@ -1,8 +1,6 @@
-package org.example.inscriptionservice.DTO;
+package org.example.inscriptionservice.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 
 @Data
