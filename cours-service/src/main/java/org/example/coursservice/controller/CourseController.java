@@ -41,7 +41,7 @@ public class CourseController {
     @PutMapping("/{id}")
     public Course update(@PathVariable Long id, @RequestBody Course updatedCourse) {
         Course course = service.findById(id)
-                .orElseThrow(() -> new RuntimeException("Course not found with ID: " + id));
+                .orElseThrow(() -> new RuntimeException(CourseNotFoundException.COURSE_NOT_FOUND_MSG + id));
         course.setTitle(updatedCourse.getTitle());
         course.setDescription(updatedCourse.getDescription());
         course.setYoutubeVideoId(updatedCourse.getYoutubeVideoId());
@@ -54,7 +54,7 @@ public class CourseController {
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         service.findById(id)
-                .orElseThrow(() -> new RuntimeException("Course not found with ID: " + id));
+                .orElseThrow(() -> new RuntimeException(CourseNotFoundException.COURSE_NOT_FOUND_MSG + id));
         service.deleteById(id);
     }
     public class CourseNotFoundException extends RuntimeException {
