@@ -9,6 +9,7 @@ import java.util.Optional;
 
 @Service
 public class CourseService {
+    
 
     private final CourseRepository repo;
 
@@ -34,5 +35,10 @@ public class CourseService {
     // Supprimer un cours par ID
     public void deleteById(Long id) {
         repo.deleteById(id);
+    }
+
+    public static class AuthenticationFailedException extends Throwable {
+        public AuthenticationFailedException(String s) {
+        }
     }
 }

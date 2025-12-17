@@ -4,6 +4,7 @@ import org.example.coursservice.entite.Course;
 import org.example.coursservice.entite.Teacher;
 import org.example.coursservice.repository.CourseRepository;
 import org.example.coursservice.repository.TeacherRepository;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

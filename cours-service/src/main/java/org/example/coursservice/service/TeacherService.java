@@ -13,6 +13,12 @@ import java.util.UUID;
 
 @Service
 public class TeacherService {
+    public class AuthenticationFailedException extends RuntimeException {
+
+        public AuthenticationFailedException(String message) {
+            super(message);
+        }
+    }
 
     private final TeacherRepository teacherRepository;
     private final BCryptPasswordEncoder passwordEncoder;
@@ -47,7 +53,7 @@ public class TeacherService {
         // Trouver l'enseignant par email
         Optional<Teacher> teacherOpt = teacherRepository.findByEmail(request.getEmail());
         if (teacherOpt.isEmpty()) {
-            throw new RuntimeException("Email ou mot de passe incorrect");
+            throw new CourseService.AuthenticationFailedException("Email ou mot de passe incorrect");
         }
 
         Teacher teacher = teacherOpt.get();
