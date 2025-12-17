@@ -5,14 +5,23 @@ import org.example.coursservice.dto.LoginRequest;
 import org.example.coursservice.dto.RegisterRequest;
 import org.example.coursservice.entite.Teacher;
 import org.example.coursservice.repository.TeacherRepository;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.ResponseStatus;
 
 import java.util.Optional;
 import java.util.UUID;
 
 @Service
 public class TeacherService {
+    @ResponseStatus(HttpStatus.CONFLICT) // HTTP 409
+    public class TeacherAlreadyExistsException extends RuntimeException {
+
+        public TeacherAlreadyExistsException(String message) {
+            super(message);
+        }
+    }
     public class AuthenticationFailedException extends RuntimeException {
 
         public AuthenticationFailedException(String message) {
@@ -32,7 +41,7 @@ public class TeacherService {
         // Vérifier si l'email existe déjà
         Optional<Teacher> existingTeacher = teacherRepository.findByEmail(request.getEmail());
         if (existingTeacher.isPresent()) {
-            throw new RuntimeException("Un enseignant avec cet email existe déjà");
+            throw new TeacherAlreadyExistsException("Un enseignant avec cet email existe déjà");
         }
 
         // Créer un nouvel enseignant
@@ -53,7 +62,7 @@ public class TeacherService {
         // Trouver l'enseignant par email
         Optional<Teacher> teacherOpt = teacherRepository.findByEmail(request.getEmail());
         if (teacherOpt.isEmpty()) {
-            throw new CourseService.AuthenticationFailedException("Email ou mot de passe incorrect");
+            throw new AuthenticationFailedException("Email ou mot de passe incorrect");
         }
 
         Teacher teacher = teacherOpt.get();

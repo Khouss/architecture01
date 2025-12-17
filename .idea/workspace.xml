@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b880b42-73b3-4313-b16e-f1e259c47428" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cours-service/src/main/java/org/example/coursservice/CoursServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cours-service/src/main/java/org/example/coursservice/CoursServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cours-service/src/main/java/org/example/coursservice/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cours-service/src/main/java/org/example/coursservice/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cours-service/src/main/java/org/example/coursservice/service/TeacherService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cours-service/src/main/java/org/example/coursservice/service/TeacherService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +102,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1766010225918</updated>
-      <workItem from="1766010226481" duration="2100000" />
+      <workItem from="1766010226481" duration="2415000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
