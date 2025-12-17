@@ -5,7 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+
+import static org.junit.Assert.assertNotNull;
 
 
 
@@ -18,10 +19,15 @@ public class StatistiqueServiceApplication {
     @Autowired
     private ApplicationContext context;
 
-    @Test
-    public void contextLoads() {
-        // Vérifie que le contexte Spring Boot s'est bien chargé
-        assertNotNull(context, "The application context should have loaded successfully");
+    public void doSomething() {
+        doSomething();
     }
+
+    public void notImplemented() {
+        throw new UnsupportedOperationException("notImplemented() cannot be performed because ...");
+    }
+
+
+
 
 }
