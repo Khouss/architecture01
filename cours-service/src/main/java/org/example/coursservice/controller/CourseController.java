@@ -32,8 +32,10 @@ public class CourseController {
     @GetMapping("/{id}")
     public Course getById(@PathVariable Long id) {
         return service.findById(id)
-                .orElseThrow(() -> new RuntimeException("Course not found with ID: " + id));
+                .orElseThrow(() ->
+                        new RuntimeException(CourseNotFoundException.COURSE_NOT_FOUND_MSG + id));
     }
+
 
     // Mettre à jour un cours
     @PutMapping("/{id}")
@@ -54,5 +56,14 @@ public class CourseController {
         service.findById(id)
                 .orElseThrow(() -> new RuntimeException("Course not found with ID: " + id));
         service.deleteById(id);
+    }
+    public class CourseNotFoundException extends RuntimeException {
+
+        private static final String COURSE_NOT_FOUND_MSG =
+                "Course not found with ID: ";
+
+        public CourseNotFoundException(Long id) {
+            super(COURSE_NOT_FOUND_MSG + id);
+        }
     }
 }
