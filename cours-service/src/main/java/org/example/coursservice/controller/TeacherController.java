@@ -1,4 +1,4 @@
-package org.example.coursservice.Controller;
+package org.example.coursservice.controller;
 
 import org.example.coursservice.DTO.AuthResponse;
 import org.example.coursservice.DTO.LoginRequest;

@@ -1,4 +1,4 @@
-package org.example.coursservice.Controller;
+package org.example.coursservice.controller;
 
 import org.example.coursservice.entite.Course;
 import org.example.coursservice.service.CourseService;
